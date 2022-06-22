@@ -1,8 +1,20 @@
 import React from 'react';
+import fetchData from '../services/api.js'
 
 function Form() {
+  const handleSubmit = (event) => {
+    //
+    // Lidar com o Envio do Form
+    //
+    event.preventDefault();
+    fetchData("Guararapes").then((response) => {
+      console.log(response);
+    });
+  
+  }
+
   return (
-    <form>
+    <form onSubmit={ handleSubmit }>
       <input 
         type="text" 
         placeholder="Cidade" 
