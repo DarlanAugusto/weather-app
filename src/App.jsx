@@ -1,7 +1,12 @@
 import React from 'react';
+import Form from './components/Form';
 
 function App() {
-  return <h1>Olá, Mundo!</h1>
+  return (
+    <div className="flex flex-col h-screen w-full items-center justify-center">
+      <Form />
+    </div>
+  );
 }
 
 export default App;
