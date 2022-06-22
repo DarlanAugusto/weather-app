@@ -1,6 +1,8 @@
 import React from 'react';
 
-function Card() {
+function Card({ data }) {
+  console.log(data);
+
   return (
     <div className="bg-white p-6 mt-10 rounded-lg shadow-md">
       <div className="text-center">
